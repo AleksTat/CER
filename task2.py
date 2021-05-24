@@ -56,7 +56,7 @@ def forward_dynamics(force, dq, link_masses, joint_damping, gravity_acc):
                   [0, 0, d3]])
 
     # Gravity
-    G = gravity_acc * np.array([[m2+m3+m4, m3+m4, m4]] * N).T
+    G = gravity_acc * np.array([[m2+m3+m4, 0, 0]] * N).T
 
     # Compute the acceleration
     ddq = np.matmul(np.linalg.inv(M), force - np.matmul(C, dq) - G)
