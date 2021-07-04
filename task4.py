@@ -500,10 +500,14 @@ if __name__ == "__main__":
     """
     # TODO implement your answer here (Theorie Fragen)
     # subtask 6
-    # 1-Die Ergebnisse werden ungenauer, bzw. approximieren die korrekte Lösung nicht genauso gut wie mit
+   # 1-Die Ergebnisse werden ungenauer, bzw. approximieren die korrekte Lösung nicht genauso gut wie mit
         einem kleineren dt. Dafür kann das Verhalten des Systems über einen längeren Zeitraum betrachtet
         werden als mit einem kleineren dt, vorrausgesetzt die Anzahl der Steps n bleibt gleich. 
+        Also: Möchte man z.B. den Systemzustand nach 5 Sekunden simulieren, benötigt es mit einem 
+        größeren dt weniger Rechenaufwand als mit einem kleineren dt, jedoch sind dann die Ergebnisse 
+        wie gesagt ungenauer/schlechter als mit einem kleineren dt. 
     #
-    # 2-Die Ergebnisse werden kleiner, aber der Betrag steigt.
+    # 2-Wenn man die Federkonstante vergrößert, werden die Ergebnisse kleiner. Wenn man die Federkonstante
+        verkleinert, werden die Ergebnisse größer.
     # 
     """
